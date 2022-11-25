@@ -36,7 +36,7 @@ export default class SecureLS {
       config.encodingType.toLowerCase() :
       constants.EncrytionTypes.BASE64;
 
-    this.ls = localStorage;
+    this.ls = window.localStorage;
     this.init();
   };
 
