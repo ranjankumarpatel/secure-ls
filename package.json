@@ -1,5 +1,5 @@
 {
-  "name": "secure-ls",
+  "name": "@rkpjs/secure-ls",
   "version": "1.2.6",
   "description": "Secure localStorage data with high level of encryption and data compression",
   "main": "./dist/secure-ls.js",
@@ -51,9 +51,10 @@
   "author": "Varun Malhotra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/softvar/secure-ls/issues"
+    "url": "https://github.com/ranjankumarpatel/secure-ls/issues"
   },
-  "homepage": "https://github.com/softvar/secure-ls",
+  "homepage": "https://github.com/ranjankumarpatel/secure-ls",
+  "publishConfig":{"registry":"https://registry.npmjs.org"},
   "dependencies": {
     "crypto-js": "^3.1.6",
     "lz-string": "^1.4.4"
