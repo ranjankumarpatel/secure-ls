@@ -15,14 +15,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ic --no-package-lock
+      - run: npm ci --no-package-lock
       - run: npm test
 
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     steps:
       - uses: actions/checkout@v3
