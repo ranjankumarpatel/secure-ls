@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ic
+      - run: npm ic --no-package-lock
       - run: npm test
 
   publish-gpr:
